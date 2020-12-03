@@ -10112,6 +10112,12 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
-.logo{
-  margin-top: 10%;
+
+@media screen and (max-width: 1024px) {
+ .social-icons{
+   display: none;
+ }
+ .card {
+   margin-bottom: 20px;
+ }
 }
