@@ -25,11 +25,15 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
-                    <li class="nav-item mb-3"><a class="nav-link js-scroll-trigger" href="#Qui">Qui sommes-nous</a></li>
-                    <li class="nav-item mb-3"><a class="nav-link js-scroll-trigger" href="#Menu">Menu</a></li>
-                    <li class="nav-item mb-3"><a class="nav-link js-scroll-trigger" href="#Horaire">Contact et Horaire</a></li>
+                    <li class="nav-item mb-5"><a class="nav-link js-scroll-trigger" href="#Qui">Qui sommes-nous</a></li>
+                    <li class="nav-item mb-5"><a class="nav-link js-scroll-trigger" href="#Menu">Menu</a></li>
+                    <li class="nav-item mb-5"><a class="nav-link js-scroll-trigger" href="#Horaire">Contact et Horaire</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Reservation">Reservations</a></li>
                 </ul>
+            </div>
+            <div>
+                <p class="text-white">Copyright 2020 © <br>Created by Ryan et Adrien <br>Pour toutes demande de creation de site envoye un DM à Adrien
+                    #0067 sur discord</p>
             </div>
             <div class="social-icons">
                 <a class="social-icon" href="#"><i class="fab fa-linkedin-in"></i></a>
@@ -44,13 +48,13 @@
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="images/1.png" class="d-block w-100 h-100 fleche" alt="...">
+                <img src="images/1.jpg" class="d-block w-100 h-100 fleche" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="images/1.png" class="d-block w-100 h-100 fleche" alt="...">
+                <img src="images/2.jpg" class="d-block w-100 h-100 fleche" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="images/1.png" class="d-block w-100 h-100 fleche" alt="...">
+                <img src="images/3.jpg" class="d-block w-100 h-100 fleche" alt="...">
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -196,21 +200,24 @@
                         <div class="row justify-content-around mb-3" id="boissons">
                             <h3 class="col-lg-12 text-center">BOISSONS</h3>
                             <div class="card" style="width: 18rem;">
-                                <img class="card-img-top" src="images/entre1.jpg" alt="Card image cap">
+                                <img class="card-img-top" src="images/boisson1.jpg" alt="Card image cap">
                                 <div class="card-body">
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <h4 class="text-center">Limoncello</h4>
+                                    <p class="card-text text-center">8.00€</p>
                                 </div>
                             </div>
                             <div class="card" style="width: 18rem;">
-                                <img class="card-img-top" src="images/entre1.jpg" alt="Card image cap">
+                                <img class="card-img-top" src="images/boisson2.jpg" alt="Card image cap">
                                 <div class="card-body">
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <h4 class="text-center">Eau</h4>
+                                    <p class="card-text text-center">1.50€</p>
                                 </div>
                             </div>
                             <div class="card" style="width: 18rem;">
-                                <img class="card-img-top" src="images/entre1.jpg" alt="Card image cap">
+                                <img class="card-img-top" src="images/boisson3.jpg" alt="Card image cap">
                                 <div class="card-body">
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <h4 class="text-center">Coca-Cola</h4>
+                                    <p class="card-text text-center">2.50€</p>
                                 </div>
                             </div>
                         </div>
@@ -243,7 +250,7 @@
             <!-- Formulaire -->
             <div id="Reservation">
                 <h2 class="col-lg-12 text-center mt-5 mb-3">RESERVATION</h2>
-                <form action="" class="main-form needs-validation mb-5" novalidate>
+                <form action="" class="main-form needs-validation" method="POST">
                     <div class="form-row">
                         <div class="col-sm-12 col-lg-6">
                             <div class="form-group">
@@ -289,11 +296,9 @@
                             </div>
                         </div>
                     </div>
-                    <button type="submit" class="col-lg-12 btn btn-success text-center mt-5">Submit</button>
+                    <button type="submit" class="col-lg-12 btn btn-success text-center mt-5 Valider">Valider</button>
                 </form>
             </div>
-
-            <hr class="m-0" />
             
             </section>
         </div>
