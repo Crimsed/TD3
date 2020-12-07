@@ -13,6 +13,7 @@
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/styles2.css" rel="stylesheet" />
     </head>
     <body id="page-top">
 
@@ -25,10 +26,43 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
-                    <li class="nav-item mb-5"><a class="nav-link js-scroll-trigger" href="#Qui">Qui sommes-nous</a></li>
-                    <li class="nav-item mb-5"><a class="nav-link js-scroll-trigger" href="#Menu">Menu</a></li>
-                    <li class="nav-item mb-5"><a class="nav-link js-scroll-trigger" href="#Horaire">Contact et Horaire</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Reservation">Reservations</a></li>
+                    <li class="nav-item mb-5 titre"><a class="nav-link js-scroll-trigger" href="#Qui">Qui sommes-nous</a></li>
+                    
+                    <div class="nav-side-menu nav-item mb-5">
+                        <div class="brand nav-link toggle-btn btn-menu titre" href="#" data-toggle="collapse" data-target="#menu-content">Menu</div>
+                            <div class="menu-list">
+                                <ul id="menu-content" class="menu-content collapse out p-0">
+                                    <li class="Menu">
+                                      <a href="#entree" class="nav-link">
+                                        Entrée
+                                      </a>
+                                    </li>
+                                    <li class="Menu">
+                                        <a href="#plats" class="nav-link">
+                                          Plats
+                                        </a>
+                                      </li>
+                                      <li class="Menu">
+                                        <a href="#desserts" class="nav-link">
+                                          Desserts
+                                        </a>
+                                      </li>
+                                      <li class="Menu">
+                                        <a href="#menus" class="nav-link">
+                                          Menus
+                                        </a>
+                                      </li>
+                                      <li class="Menu">
+                                        <a href="#boissons" class="nav-link">
+                                          Boissons
+                                        </a>
+                                      </li>
+                                </ul>
+                         </div>
+                      </div>
+
+                    <li class="nav-item mb-5 titre"><a class="nav-link js-scroll-trigger" href="#Horaire">Contact et Horaire</a></li>
+                    <li class="nav-item titre"><a class="nav-link js-scroll-trigger" href="#Reservation">Reservations</a></li>
                 </ul>
             </div>
             <div class="social-icons">
@@ -44,13 +78,13 @@
         <div id="carouselExampleControls" class="carousel slide row" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="images/1.jpg" class="d-block w-100 h-100 fleche" alt="...">
+                <img class="d-block w-100" src="images/1.png" alt="First slide">
               </div>
               <div class="carousel-item">
-                <img src="images/2.jpg" class="d-block w-100 h-100 fleche" alt="...">
+                <img class="d-block w-100" src="images/2.jpg" alt="Second slide">
               </div>
               <div class="carousel-item">
-                <img src="images/3.jpg" class="d-block w-100 h-100 fleche" alt="...">
+                <img class="d-block w-100" src="images/3.png" alt="Third slide">
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -62,13 +96,15 @@
               <span class="sr-only">Next</span>
             </a>
           </div>
+
           <div class="marquee-rtl">
               <div class="defile">
           <nav class="nav Reduc">
-            <p class="nav-item text-center pb-3 pt-3">Avec le <span class="BF text-success">black friday</span> et l'ouverture imminente de notre restaurant gastronomique italien. Nous vous proponsons offre exceptionnelle.
+            <p class="nav-item text-center pb-3 pt-3">Avec le <span class="BF text-success">black friday</span> et l'ouverture imminente de notre restaurant gastronomique italien. Nouv vous proponsons offre exceptionnelle.
                 Pour un menu découverte acheté vous avez 10% de réduction sur votre facture final !!</p>
-        </nav>
-        </div></div>
+            </nav>
+            </div>
+          </div>
         <!-- Page Content-->
 
         <div class="container p-0">
@@ -95,7 +131,7 @@
                       <h2 class="col-lg-12 text-center">MENU DU RESTAURANT</h2>
                     <div class="col-lg-12">
                       <div class="row justify-content-around mb-3" id="entree">
-                          <h3 class="col-lg-12 text-center">ENTRÉE</h3>
+                          <h3 class="col-lg-12 text-center" id="entree">ENTREE</h3>
                         <div class="card" style="width: 18rem;">
                             <img class="card-img-top" height="200px"src="images/entrer.jpg" alt="Card image cap">
                             <div class="card-body">
@@ -125,7 +161,7 @@
                     <!-- plat -->
                     <div class="col-lg-12">
                       <div class="row justify-content-around mb-3" id="plats">
-                        <h3 class="col-lg-12 text-center">PLATS</h3>
+                        <h3 class="col-lg-12 text-center" id="plats">PLATS</h3>
                         <div class="card" style="width: 18rem;">
                             <img class="card-img-top" height="200px" src="images/plat1.jpg" alt="Card image cap">
                             <div class="card-body">
@@ -154,7 +190,7 @@
                     </div>
                     <div class="col-lg-12">
                         <div class="row justify-content-around mb-3" id="desserts">
-                            <h3 class="col-lg-12 text-center">DESSERTS</h3>
+                            <h3 class="col-lg-12 text-center" id="desserts">DESSERTS</h3>
                             <div class="card" style="width: 18rem;">
                                 <img class="card-img-top" src="images/tiramisu.png" height="200px" alt="Card image cap">
                                 <div class="card-body"> 
@@ -183,24 +219,24 @@
                       </div>
                       <div class="col-lg-12">
                         <div class="row justify-content-around mb-3" id="menus">
-                            <h3 class="col-lg-12 text-center">MENUS</h3>
+                            <h3 class="col-lg-12 text-center" id="menus">MENUS</h3>
                             <div class="card" style="width: 18rem;">
                                 <div class="card-body">
                                     <h4 class="text-center">Menu découverte</h4>
-                                  <p class="card-text text-center">Entrée Plat Désert</p>
+                                  <p class="card-text">Entré Plat Désert</p>
                                   <p class="card-text text-center">19.90€</p>
                                 </div>
                             </div>
                             <div class="card" style="width: 18rem;">
                                 <div class="card-body">
                                     <h4 class="text-center">Menu express</h4>
-                                    <p class="card-text text-center">Entrée Plat ou Plat Désert</p>
+                                    <p class="card-text">Entré Plat ou Plat Désert</p>
                                     <p class="card-text text-center">14.90€</p></div>
                             </div>
                             <div class="card" style="width: 18rem;">
                                 <div class="card-body">
                                     <h4 class="text-center">Menu enfant</h4>
-                                    <p class="card-text text-center">Plat Désert</p>
+                                    <p class="card-text">Plat Désert</p>
                                     <p class="card-text text-center">9.90€</p></div>
                                 </div>
                             </div>
@@ -208,7 +244,7 @@
                       </div>
                       <div class="col-lg-12">
                         <div class="row justify-content-around mb-3" id="boissons">
-                            <h3 class="col-lg-12 text-center">BOISSONS</h3>
+                            <h3 class="col-lg-12 text-center" id="boissons">BOISSONS</h3>
                             <div class="card" style="width: 18rem;">
                                 <img class="card-img-top" src="images/boisson1.jpg" alt="Card image cap">
                                 <div class="card-body">
@@ -245,7 +281,7 @@
                         </li>
                         <li class="list-group-item col-lg-6 border-0 bg-transparent"><h4>Adresse</h4>
                             <p>666 Rue de la Faim - 59500 Douai</p>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2544.461941477057!2d3.0662812158940818!3d50.37658670056507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2cbe24f4f2695%3A0x42cb156dc60afd93!2s808%20Rue%20Charles%20Bourseul%2C%2059500%20Douai!5e0!3m2!1sfr!2sfr!4v1607078466170!5m2!1sfr!2sfr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2544.461941477057!2d3.0662812158940866!3d50.37658670056507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2c95ca821976b%3A0x93440cf043986a22!2sGRETA%20GRAND%20HAINAUT%20-%20SITE%20DE%20DOUAI!5e0!3m2!1sfr!2sfr!4v1607093254231!5m2!1sfr!2sfr" width="200" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                         </li>
                         <li class="list-group-item col-lg-6 border-0 bg-transparent"><h4>E-mail</h4>
                             <p>LeMeilleurRestau@pizza.fr</p>
@@ -306,7 +342,31 @@
                             </div>
                         </div>
                     </div>
-                    <button type="submit" class="col-lg-12 btn btn-success text-center mt-5 Valider">Valider</button>
+
+                    <!-- Button trigger modal -->
+                    <button type="submit" class="btn btn-success col-lg-12 mt-5" data-toggle="modal" data-target="#exampleModalCenter">
+                    Valider
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Réservation validée</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Votre réservation a été accepté pour le 01/01 à 22h00
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
                 </form>
             </div>
         </div>
@@ -315,6 +375,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Third party plugin JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
     </body>

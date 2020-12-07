@@ -10163,3 +10163,7 @@ section.resume-section .resume-section-content {
   margin-left: 0%;
   
 }
+
+#carouselExampleControls{
+ height: 100%;
+}
