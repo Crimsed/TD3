@@ -297,7 +297,7 @@
             <!-- Formulaire -->
             <div id="Reservation" class=" container">
                 <h2 class="col-lg-12 text-center mt-5 mb-3">RESERVATION</h2>
-                <form action="" class="main-form needs-validation" method="POST">
+                <form method="" action="test.html" class="main-form needs-validation" ">
                     <div class="form-row">
                         <div class="col-sm-12 col-lg-6">
                             <div class="form-group">
@@ -332,41 +332,38 @@
                         <div class="col">
                             <div class="form-group">
                                 <label for="date">Date</label>
-                                <input type="date" name="date" id="date" required class="col-lg-12">
+                                <input type="date" name="date" id="date" required class="col-lg-12 mt-3 custom-file">
                             </div>
                         </div>
                         <div class="col">
                             <div class="form-group">
-                                <label for="time">Heure</label>
-                                <input type="time" name="time" id="time" required class="col-lg-12">
+                                <label for="">Heure</label>
+                                <select class="custom-select mt-3" required>
+                                <option value="">Choisir heure de réservation</option>
+                                <option >12h</option>
+                                <option >12h30</option>
+                                <option >13h</option>
+                                <option >13h30</option>
+                                <option >14h</option>
+                                <option >14h30</option>
+                                <option >19h</option>
+                                <option >19h30</option>
+                                <option >20h</option>
+                                <option >20h30</option>
+                                <option >21h</option>
+                                <option >21h30</option>
+                                <option >22h</option>
+                                <option >22h30</option>
+                                <option >23h</option>
+                                </select>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Button trigger modal -->
-                    <button type="submit" class="btn btn-success col-lg-12 mt-5" data-toggle="modal" data-target="#exampleModalCenter">
+                    <button type="submit" class="btn btn-success col-lg-12 mt-5">
                     Valider
                     </button>
 
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLongTitle">Réservation validée</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            Votre réservation a été accepté pour le 01/01 à 22h00
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        </div>
-                        </div>
-                    </div>
-                    </div>
                 </form>
             </div>
         </div>
