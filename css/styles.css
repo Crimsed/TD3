@@ -10120,6 +10120,9 @@ section.resume-section .resume-section-content {
  .card {
    margin-bottom: 20px;
  }
+ #carouselExampleControls{
+   margin-top: 3rem ;
+ }
 }
 
 #Reservation{
