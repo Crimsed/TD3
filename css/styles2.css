@@ -11,3 +11,11 @@
 .titre{
     font-size: 20px;
 }
+
+.card{
+    width: 18rem;
+}
+
+.card-img-top{
+    height: 15rem;
+}
